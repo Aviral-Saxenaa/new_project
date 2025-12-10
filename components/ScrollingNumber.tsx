@@ -54,11 +54,12 @@ const ScrollingNumber = ({ finalValue, duration = 3000, onComplete }: ScrollingN
       style={{ color: '#2B7797' }}
       animate={isScrolling ? {
         scale: [1, 1.1, 1],
-        rotateY: [0, 5, -5, 0]
-      } : {}}
+      } : {
+        scale: 1
+      }}
       transition={{
         duration: 0.3,
-        repeat: isScrolling ? Infinity : 0,
+        repeat: isScrolling ? 3 : 0,
         ease: "easeInOut"
       }}
     >

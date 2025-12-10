@@ -83,7 +83,7 @@ const Quiz = ({ questions, onComplete }: QuizProps) => {
                 <motion.div
                   className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mb-2 relative"
                   animate={{ y: [0, -5, 0] }}
-                  transition={{ duration: 2, repeat: Infinity }}
+                  transition={{ duration: 2, repeat: 2, repeatType: "reverse" }}
                 >
                   {/* Animated Cat Paw */}
                   <div className="relative w-10 h-10">
@@ -94,7 +94,7 @@ const Quiz = ({ questions, onComplete }: QuizProps) => {
                         scaleY: [1, 0.8, 1],
                         scaleX: [1, 1.1, 1]
                       }}
-                      transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                      transition={{ duration: 1.5, repeat: 2, ease: "easeInOut" }}
                     />
                     
                     {/* Toe pads - animated opening and closing */}
@@ -105,7 +105,7 @@ const Quiz = ({ questions, onComplete }: QuizProps) => {
                         y: [0, -1, 0],
                         scale: [1, 0.8, 1]
                       }}
-                      transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                      transition={{ duration: 1.5, repeat: 2, ease: "easeInOut" }}
                     />
                     <motion.div 
                       className="absolute top-1 right-1 w-2 h-2 bg-pink-400 rounded-full"
@@ -114,7 +114,7 @@ const Quiz = ({ questions, onComplete }: QuizProps) => {
                         y: [0, -1, 0],
                         scale: [1, 0.8, 1]
                       }}
-                      transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                      transition={{ duration: 1.5, repeat: 2, ease: "easeInOut" }}
                     />
                     <motion.div 
                       className="absolute top-0 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-pink-400 rounded-full"
@@ -122,7 +122,7 @@ const Quiz = ({ questions, onComplete }: QuizProps) => {
                         y: [0, -2, 0],
                         scale: [1, 0.8, 1]
                       }}
-                      transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                      transition={{ duration: 1.5, repeat: 2, ease: "easeInOut" }}
                     />
                     <motion.div 
                       className="absolute top-1 left-1/2 transform -translate-x-1/2 translate-x-1 w-2 h-2 bg-pink-400 rounded-full"
@@ -131,7 +131,7 @@ const Quiz = ({ questions, onComplete }: QuizProps) => {
                         y: [0, -1, 0],
                         scale: [1, 0.8, 1]
                       }}
-                      transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut", delay: 0.1 }}
+                      transition={{ duration: 1.5, repeat: 2, ease: "easeInOut", delay: 0.1 }}
                     />
                     <motion.div 
                       className="absolute top-1 left-1/2 transform -translate-x-1/2 -translate-x-1 w-2 h-2 bg-pink-400 rounded-full"
@@ -140,7 +140,7 @@ const Quiz = ({ questions, onComplete }: QuizProps) => {
                         y: [0, -1, 0],
                         scale: [1, 0.8, 1]
                       }}
-                      transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut", delay: 0.1 }}
+                      transition={{ duration: 1.5, repeat: 2, ease: "easeInOut", delay: 0.1 }}
                     />
                   </div>
                 </motion.div>
