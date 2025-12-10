@@ -64,7 +64,6 @@ const Quiz = ({ questions, onComplete }: QuizProps) => {
   }
 
   const isLastQuestion = currentQuestion === questions.length - 1
-  const progress = ((currentQuestion + 1) / questions.length) * 100
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#72c6e2] via-[#A9DEEE] to-[#CDEDF9] flex items-center justify-center p-4">
